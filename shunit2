@@ -777,7 +777,7 @@ failSame() {
   fi
 
   shunit_message_=${shunit_message_%% }
-  _shunit_assertFail "${shunit_message_:+${shunit_message_} }expected not same"
+  _shunit_assertFail "${shunit_message_:+${shunit_message_} }shall not be $2"
 
   unset shunit_message_
   return ${SHUNIT_FALSE}
